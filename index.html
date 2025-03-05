@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeneFun - AI, Machine Learning, and Search</title>
+    <meta name="description" content="Software Development Contractors specializing in AI, Machine Learning, and Search">
+    <meta name="author" content="GeneFun">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #cf8f17;
+            --secondary-color: #161616;
+            --text-color: #333;
+            --light-text: #fff;
+            --background-color: #f9f9f9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Karla', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Old Standard TT', serif;
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #fdb01f;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--secondary-color);
+            color: var(--light-text);
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.65) 0%, rgba(22, 22, 22, 0.75) 100%), url('images/hero.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            z-index: 0;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-heading {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background-color: #f4f4f4;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .contact-email {
+            font-size: 1.3rem;
+            margin: 20px 0;
+            display: inline-block;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--light-text);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                padding: 0 20px;
+            }
+            
+            .tagline {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .main-content {
+                padding: 50px 0;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .about-heading {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <h1 class="logo">GeneFun</h1>
+            <h2 class="tagline">Software Development Contractors</h2>
+            <p class="subtitle">Specializing in AI, Machine Learning, and Search</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-section">
+                <div class="about-content">
+                    <h3 class="about-heading">We can consult with your team or provide complete solutions.</h3>
+                    <p>
+                        I have a PhD in computer science from Stanford University and BS and MS degrees in computer science from BYU along with extensive software development experience, especially extracting information from the Web and creating leading-edge chatbots and search engines. I work with a talented group of off-shore developers.
+                    </p>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-heading">Together we can meet your needs!</h3>
+                    <p>
+                        Whether you need consulting services for your existing team or a complete solution built from scratch, we have the expertise to help you succeed with your AI, machine learning, and search implementation goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Have a project in mind? Let's discuss how we can help.</p>
+            <a href="mailto:dallan@gmail.com" class="contact-email">dallan@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GeneFun - All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
